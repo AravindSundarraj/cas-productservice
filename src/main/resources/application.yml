@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: products-service
+  data:
+    cassandra:
+      contact-points: localhost
+      username: appuser
+      password: password
+      keyspace-name: catalog
+      port: 9042
+      schema-action: NONE
+      connect-timeout-millis: 10000ms
+      read-timeout-millis: 10000ms
+      connect-timeout: 10000ms
+      read-timeout: 10000ms
+      pool.pool-timeout: 10000ms
+      local-datacenter: datacenter1
+
+server:
+  port: 8080
+  servlet:
+    context-path: /product-service
+
