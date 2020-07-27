@@ -16,6 +16,7 @@ public class ProductEntity {
     private String brand;
     private String publisher;
     private Integer length;
+    @Column("breadth")
     private Integer breath;
     private Integer height;
 
